@@ -1,41 +1,42 @@
 package com.sandeep.hostelcare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.RadioGroup;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class loginActivity extends AppCompatActivity {
-    private Button studentBtn,wardenBtn;
+    private RadioGroup accountType;
+    private RadioGroup.OnCheckedChangeListener listener = new RadioGroup.OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(RadioGroup group, int checkedId) {
+            Intent intent = null;
+            if (checkedId == R.id.studentAccount) {
+                intent = new Intent(loginActivity.this, studentLogin.class);
+            } else if (checkedId == R.id.wardenAccount) {
+                intent = new Intent(loginActivity.this, wardenLoginpage.class);
+            }
+            if (intent != null) {
+                startActivity(intent);
+            }
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        accountType = findViewById(R.id.accountType);
+        accountType.setOnCheckedChangeListener(listener);
 
-        wardenBtn=findViewById(R.id.wardenButton);
-        studentBtn=findViewById(R.id.studentButton);
+    }
 
-        wardenBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Open Warden Login Activity
-                Intent intent = new Intent(loginActivity.this, wardenLoginpage.class);
-                startActivity(intent);
-            }
-        });
-
-        studentBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Open Student Login Activity
-                Intent intent = new Intent(loginActivity.this, studentLogin.class);
-                startActivity(intent);
-            }
-        });
-
-
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        accountType.setOnCheckedChangeListener(null);
+        accountType.clearCheck();
+        accountType.setOnCheckedChangeListener(listener);
     }
 }

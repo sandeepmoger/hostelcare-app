@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/nittelogo"></ImageView>
+            android:src="@drawable/nittelogo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,14 +26,13 @@
             android:text="hostel Care"
             android:textColor="@color/white"
             android:textSize="40sp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold" />
 
         <ProgressBar
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:backgroundTint="#0000FF"
-            android:layout_marginTop="20dp"></ProgressBar>
-
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0000FF" />
 
 
     </LinearLayout>
@@ -41,12 +40,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NMAMIT"
         android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:textColor="@color/white"
         android:layout_marginBottom="10dp"
-        android:textStyle="italic">
-    </TextView>
+        android:gravity="center"
+        android:text="NMAMIT"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
 
 </RelativeLayout>

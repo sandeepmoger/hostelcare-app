@@ -13,17 +13,18 @@
 
         android:layout_height="200dp"
         android:src="@drawable/alertimg"/>
+
     <EditText
-        android:id="@+id/alertEditText"
+        android:id="@+id/alertMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="enter Alert message"/>
+        android:hint="Enter Alert Message"/>
     <Button
         android:id="@+id/alertButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ALERT"
+        android:text="Send Alert"
         android:backgroundTint="@color/red"
         android:textColor="@color/black"/>
 
