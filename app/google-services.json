@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917111516695",
+    "project_id": "hostelcarefirebase",
+    "storage_bucket": "hostelcarefirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917111516695:android:6162d762e022159bd63652",
+        "android_client_info": {
+          "package_name": "com.sandeep.hostelcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjd_NVwyxesLABD9LiwtYn7m9_5EuBcO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

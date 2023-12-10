@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".studentHomeFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardBackgroundColor="@color/black"
+
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+
+
+
+                <VideoView
+                   android:layout_gravity="top|center"
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" />
+                <TextView
+                    android:id="@+id/announcementTextView"
+                        android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/lavender"
+                     android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/logoutStudentImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logout1"
+            android:layout_gravity="right|bottom"
+
+
+            />
+
+        <TextView
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:text="logout"
+            android:textSize="10dp" />
+
+
+</LinearLayout>

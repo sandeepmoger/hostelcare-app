@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bluebg"
+    tools:context=".studentHomePage">
+
+    <!--changed all ids  of all elements-->
+
+
+    <FrameLayout
+        android:id="@+id/studentFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/studentBottomNavView"
+        android:layout_width="match_parent"
+        app:menu="@menu/student_bottom_nav_menu"
+
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

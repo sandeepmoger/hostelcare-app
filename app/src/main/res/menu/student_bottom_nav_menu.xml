@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:icon="@drawable/home"
+        android:id="@+id/studentNavHome"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navAddComplaints"
+        android:icon="@drawable/add_complaint"
+        android:title="Add complaints" />
+
+    <item
+        android:id="@+id/navComplaintStatus"
+        android:icon="@drawable/complaint_status"
+        android:title="complaint status" />
+
+    <item
+        android:id="@+id/navLeave"
+        android:icon="@drawable/leave"
+        android:title="leave application" />
+</menu>
