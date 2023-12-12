@@ -12,13 +12,10 @@
         android:icon="@drawable/add_complaint"
         android:title="Add complaints" />
 
-    <item
-        android:id="@+id/navComplaintStatus"
-        android:icon="@drawable/complaint_status"
-        android:title="complaint status" />
+
 
     <item
         android:id="@+id/navLeave"
-        android:icon="@drawable/leave"
-        android:title="leave application" />
+        android:icon="@drawable/rulesimg"
+        android:title="rules" />
 </menu>

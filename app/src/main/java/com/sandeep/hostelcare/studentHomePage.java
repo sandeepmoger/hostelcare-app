@@ -1,14 +1,7 @@
 package com.sandeep.hostelcare;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.FrameLayout;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.FirebaseMessagingService;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -24,7 +17,7 @@ public class studentHomePage extends AppCompatActivity {
     private studentHomeFragment homeFragment;
     private studentComplaintsFragment complaintsFragment;
     private studentComplaintStatusFragment complaintStatusFragment;
-    private studentLeaveFragment leaveFragment;
+    private studentRulesFragment leaveFragment;
 
     private Fragment activeFragment;
 
@@ -39,7 +32,7 @@ public class studentHomePage extends AppCompatActivity {
         homeFragment = new studentHomeFragment();
         complaintsFragment = new studentComplaintsFragment();
         complaintStatusFragment = new studentComplaintStatusFragment();
-        leaveFragment = new studentLeaveFragment();
+        leaveFragment = new studentRulesFragment();
 
         activeFragment = homeFragment;
 
@@ -58,8 +51,7 @@ public class studentHomePage extends AppCompatActivity {
                 selectedFragment = homeFragment;
             } else if (itemId == R.id.navAddComplaints) {
                 selectedFragment = complaintsFragment;
-            } else if (itemId == R.id.navComplaintStatus) {
-                selectedFragment = complaintStatusFragment;
+
             } else if (itemId == R.id.navLeave) {
                 selectedFragment = leaveFragment;
             }

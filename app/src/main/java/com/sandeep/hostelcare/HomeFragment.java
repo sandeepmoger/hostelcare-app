@@ -1,6 +1,4 @@
 package com.sandeep.hostelcare;
-
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +6,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -24,6 +24,7 @@ public class HomeFragment extends Fragment {
 
         TextView textView = view.findViewById(R.id.textViewWardenName);
         ImageView logoutImageView = view.findViewById(R.id.logoutImageView);
+        Button updateRulesButton = view.findViewById(R.id.updateRulesButton);
 
         if (textView != null) {
             String wardenName = wardenViewModel.getWardenName();
@@ -33,8 +34,6 @@ public class HomeFragment extends Fragment {
             } else {
                 textView.setText("Warden name is null");
             }
-        } else {
-            Log.e("HomeFragment", "TextView is null");
         }
 
         if (logoutImageView != null) {
@@ -42,6 +41,17 @@ public class HomeFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     showLogoutDialog();
+                }
+            });
+        }
+
+        if (updateRulesButton != null) {
+            updateRulesButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Start the rulesActivity when the button is clicked
+                    Intent intent1 = new Intent(requireContext(), rulesActivity.class);
+                    startActivity(intent1);
                 }
             });
         }

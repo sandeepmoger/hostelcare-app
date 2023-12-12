@@ -37,33 +37,36 @@ tools:viewBindingIgnore="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.956" />
 
-    <ImageView
-        android:id="@+id/alertImageView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
 
-        android:src="@drawable/alertimg"
-        app:layout_constraintBottom_toTopOf="@+id/logoutImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.975"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
-
-    <TextView
-        android:id="@+id/alertTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="alert"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="204dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintTop_toTopOf="@+id/textViewWardenName"
+        app:layout_constraintVertical_bias="0.143">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="@color/white"
+    android:fontFamily="sans-serif-light"
+    android:text="Greetings from Hostel Care! As you explore the app, keep in mind the power it holds for better hostel living. Use it wisely, and feel free to reach out if you need assistance."/>
+
+        <Button
+            android:id="@+id/updateRulesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            android:text="click here to update rules"/>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/logoutTextView"
@@ -79,6 +82,8 @@ tools:viewBindingIgnore="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.985" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

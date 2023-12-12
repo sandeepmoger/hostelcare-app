@@ -18,5 +18,6 @@
 
     <item
         android:id="@+id/navSomething"
-        android:title="something" />
+        android:icon="@drawable/alertlogo"
+        android:title="Alert" />
 </menu>

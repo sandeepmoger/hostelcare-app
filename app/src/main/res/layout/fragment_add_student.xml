@@ -34,15 +34,15 @@
         android:padding="24dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="96dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="student name:"
                 android:layout_marginTop="5dp"
+                android:text=" name:"
                 android:textSize="25dp" />
 
             <TextView
